@@ -17,7 +17,7 @@ public class Settings {
     static final String INTENT_ACTION_DISCONNECT = APPLICATION_ID + ".Disconnect";
 
     private static final String LINK_PREFIX = "https://irthermometer.commandus.com/";
-    private static final String EMAIL_SUPPORT = "andrey.ivanov@ikfia.ysn.ru";
+    public  static final String EMAIL_SUPPORT = "andrey.ivanov@ikfia.ysn.ru";
 
     private static final String PREF_GATE = "gate";
     private static final String PREF_SERVICE_URL = "url";
@@ -107,25 +107,6 @@ public class Settings {
             mSettings = new Settings(context);
         }
         return mSettings;
-    }
-
-    public static void sendLogByMail(Context ctx){
-        // save logcat in file
-        File outputFile = new File(Environment.getExternalStorageDirectory(),
-                LOG_FILE_NAME);
-        // send file using email
-        Intent emailIntent = new Intent(Intent.ACTION_SEND);
-        // Set type to "email"
-        emailIntent.setType("vnd.android.cursor.dir/email");
-        String to[] = {EMAIL_SUPPORT};
-        emailIntent.putExtra(Intent.EXTRA_EMAIL, to);
-        // the attachment
-        emailIntent.putExtra(Intent.EXTRA_STREAM, outputFile.getAbsolutePath());
-        // Uri path = Uri.parse( "file://" + outputFile.getAbsolutePath());
-        // emailIntent.putExtra(Intent.EXTRA_STREAM, path);
-        // the mail subject
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "IRThermometer log " + outputFile.getAbsolutePath());
-        ctx.startActivity(Intent.createChooser(emailIntent , "Отправить отчет по почте.."));
     }
 
 }

@@ -21,6 +21,10 @@ public class SerialService extends Service
 
     private static final String TAG = "irthermometer-service";;
 
+    public boolean hasSocket() {
+        return socket != null;
+    }
+
     class SerialBinder extends Binder {
         SerialService getService() {
             return SerialService.this;
@@ -47,16 +51,16 @@ public class SerialService extends Service
 
     @Override
     public void onDestroy() {
-        log("service destroy");
         cancelNotification();
         disconnect();
+        log("serial service destroyed");
         super.onDestroy();
     }
 
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
-        log("service bind");
+        log("serial service bind");
         return binder;
     }
 
@@ -64,14 +68,14 @@ public class SerialService extends Service
      * Api
      */
     public void connect(SerialSocket socket) throws IOException {
-        log("service connect socket");
+        log("service connect serial socket " + socket.getName());
         socket.connect(this);
         this.socket = socket;
         connected = true;
     }
 
     public void disconnect() {
-        log("service disconnect socket");
+        log("service disconnect serial socket");
         connected = false; // ignore data,errors while disconnecting
         cancelNotification();
         if(socket != null) {
@@ -101,13 +105,7 @@ public class SerialService extends Service
     }
 
     public void detach() {
-        if (connected)
-            log("detach connected");
-        else
-            log("detach disconnected");
-        // items already in event queue (posted before detach() to mainLooper) will end up in queue1
-        // items occurring later, will be moved directly to queue2
-        // detach() and mainLooper.post run in the main thread, so all items are caught
+        log("detach service, connected: " + Boolean.toString(connected));
         listener = null;
         parser = null;
     }
@@ -140,7 +138,7 @@ public class SerialService extends Service
     @Override
     public void onSerialConnect() {
         connected = true;
-        log("serial connect");
+        log("serial connected");
         synchronized (this) {
             if (listener != null) {
                 mainLooper.post(new Runnable() {
@@ -223,7 +221,7 @@ public class SerialService extends Service
     @Override
     public void onCurrentTemperature(final int currentTemperature) {
 
-        measureIR();
+        nextMeasure();
 
         synchronized (this) {
             if (listener != null) {
@@ -239,11 +237,14 @@ public class SerialService extends Service
         }
     }
 
-    public void measureIR() {
-        parser.setMeasureMode(ThermometerParser.MEASURE_MODE.MODE_IR);
-        log("measure IR");
+    private static byte[] sequenceMeasureIR = {'0'};
+    private static byte[] sequenceMeasureAmbient = {'1'};
+
+    public void nextMeasure() {
         try {
-            write(new byte[] {'0'});
+            write(parser.getMeasureMode() == ThermometerParser.MEASURE_MODE.MODE_IR
+                    ? sequenceMeasureIR : sequenceMeasureAmbient);
+            parser.setMeasureMode(ThermometerParser.MEASURE_MODE.MODE_IR);
         } catch (final IOException e) {
             log("measure IR send '0' I/O error " + e.getMessage());
             if (connected) {
@@ -265,11 +266,10 @@ public class SerialService extends Service
 
     public void startMeasure() {
         parser.setMeasureMode(ThermometerParser.MEASURE_MODE.MODE_AMBIENT);
-        log("measure ambient");
         try {
-            write(new byte[] {'1'});
+            write(sequenceMeasureAmbient);
         } catch (final IOException e) {
-            log("measure ambient send '0' I/O error "  + e.getMessage());
+            log("measure ambient send '1' I/O error "  + e.getMessage());
             if (connected) {
                 synchronized (this) {
                     if (listener != null) {

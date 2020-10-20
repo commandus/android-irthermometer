@@ -16,6 +16,10 @@ public class ThermometerParser {
         measureMode = value;
     }
 
+    MEASURE_MODE getMeasureMode() {
+        return measureMode;
+    }
+
     public ThermometerParser(
             ParserListener measure_listener
     ) {
@@ -133,6 +137,10 @@ public class ThermometerParser {
             measurement.sentTemperature = 0;
             // reset max
             measurement.maxT = 0;
+            // reset min
+            measurement.minT = measurement.temperature1;
+            // reset ambient
+            // measurement.ambientT = 0;
             return;
         }
 

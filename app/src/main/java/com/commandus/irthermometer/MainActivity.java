@@ -16,6 +16,7 @@ import android.hardware.usb.UsbDeviceConnection;
 import android.hardware.usb.UsbManager;
 import android.media.AudioAttributes;
 import android.media.SoundPool;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.IBinder;
@@ -74,7 +75,9 @@ public class MainActivity extends AppCompatActivity
     private static final int SOUND_PRIORITY_1 = 1;
 
     private BroadcastReceiver broadcastReceiver;
+    private UsbDeviceConnection usbConnection;
     private UsbSerialPort usbSerialPort;
+    private UsbSerialDriver usbDriver;
     private SerialService service;
 
     private RFIDReader rfidReader;
@@ -123,6 +126,9 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // usbConnection = null;
+        // usbSerialPort = null;
 
         // so not show title bar
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -236,7 +242,7 @@ public class MainActivity extends AppCompatActivity
                     case R.id.menu_info:
                         return true;
                     case R.id.menu_send_log:
-                        Settings.sendLogByMail(MainActivity.this);
+                        sendLogByMail();
                         return true;
                     case R.id.menu_settings:
                         Intent intent = new Intent(MainActivity.this,
@@ -330,6 +336,59 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void connectUSBNSendMeasureAmbient(Boolean permissionGranted) {
+        if (usbConnection == null) {
+            validateUSBConnection(permissionGranted);
+            if (usbConnection == null) {
+                tryToFindDeviceInFuture(permissionGranted, 5000);
+                return;
+            }
+        }
+
+        log("USB connection established..");
+
+        if (!service.hasSocket()) {
+            SerialSocket socket = mkSerialSocket();
+            log("connect socket..");
+            try {
+                service.connect(socket);
+            } catch (Exception e) {
+                log("connect exception: " + e.getMessage());
+            }
+        }
+
+        // start with ambient temperature
+        log("start with ambient temperature");
+        service.startMeasure();
+
+        // usb connect is not asynchronous. connect-success and connect-error are returned immediately from socket.connect
+        // for consistency to bluetooth/bluetooth-LE app use same SerialListener and SerialService classes
+        soundPool.play(SOUND_ON, 1.0f, 1.0f, SOUND_PRIORITY_1, 0, 1.0f);
+    }
+
+    private SerialSocket mkSerialSocket() {
+        try {
+            // TODO
+            int portIndex = 0;
+            usbSerialPort = usbDriver.getPorts().get(portIndex);
+            usbSerialPort.open(usbConnection);
+            // TODO
+            int baudRate = 115200;
+            usbSerialPort.setParameters(baudRate, UsbSerialPort.DATABITS_8, UsbSerialPort.STOPBITS_1, UsbSerialPort.PARITY_NONE);
+            SerialSocket socket = new SerialSocket(getApplicationContext(), usbConnection, usbSerialPort);
+            return socket;
+        } catch (Exception e) {
+            log("connect exception: " + e.getMessage());
+        }
+        return null;
+    }
+
+    /**
+     * Set usbConnection, usbDriver
+     * @param permissionGranted
+     */
+    private void validateUSBConnection(Boolean permissionGranted) {
+        if (usbConnection != null)
+            return;
         UsbDevice device = null;
         UsbManager usbManager = (UsbManager) getSystemService(Context.USB_SERVICE);
         for (UsbDevice v : usbManager.getDeviceList().values()) {
@@ -341,62 +400,39 @@ public class MainActivity extends AppCompatActivity
         }
         if (device == null) {
             log("connection failed: device not found");
-            tryToFindDeviceInFuture(permissionGranted, 5000);
             return;
         }
 
-        UsbSerialDriver driver = UsbSerialProber.getDefaultProber().probeDevice(device);
-        if (driver == null) {
+        usbDriver = UsbSerialProber.getDefaultProber().probeDevice(device);
+        if (usbDriver == null) {
             log("no driver found, probe custom driver..");
-            driver = CustomProber.getCustomProber().probeDevice(device);
+            usbDriver = CustomProber.getCustomProber().probeDevice(device);
         }
-        if (driver == null) {
+        if (usbDriver == null) {
             log("connection failed: no [custom] driver for device");
             return;
         }
-        if (driver.getPorts().size() == 0) {
+        if (usbDriver.getPorts().size() == 0) {
             log("connection failed: not enough ports at device");
             return;
         }
-        // TODO
-        int portIndex = 0;
-        usbSerialPort = driver.getPorts().get(portIndex);
         log("Check USB permission..");
-        UsbDeviceConnection usbConnection = usbManager.openDevice(driver.getDevice());
-        if (usbConnection == null && permissionGranted == null && !usbManager.hasPermission(driver.getDevice())) {
+
+        usbConnection = usbManager.openDevice(usbDriver.getDevice());
+        if (usbConnection == null && permissionGranted == null && !usbManager.hasPermission(usbDriver.getDevice())) {
             log("request USB permission..");
             PendingIntent usbPermissionIntent = PendingIntent.getBroadcast(this, 0, new Intent(Settings.INTENT_ACTION_GRANT_USB), 0);
-            usbManager.requestPermission(driver.getDevice(), usbPermissionIntent);
+            usbManager.requestPermission(usbDriver.getDevice(), usbPermissionIntent);
             return;
         }
         if (usbConnection == null) {
-            if (!usbManager.hasPermission(driver.getDevice()))
+            if (!usbManager.hasPermission(usbDriver.getDevice()))
                 log("connection failed: permission denied");
             else
                 log("connection failed: open failed");
             return;
         }
-        log("USB connection established..");
-        try {
-            usbSerialPort.open(usbConnection);
-            // TODO
-            int baudRate = 115200;
-            usbSerialPort.setParameters(baudRate, UsbSerialPort.DATABITS_8, UsbSerialPort.STOPBITS_1, UsbSerialPort.PARITY_NONE);
-            SerialSocket socket = new SerialSocket(getApplicationContext(), usbConnection, usbSerialPort);
-            log("connect socket..");
-            service.connect(socket);
-
-            // start with ambient temperature
-            log("start with ambient temperature");
-            service.startMeasure();
-
-            // usb connect is not asynchronous. connect-success and connect-error are returned immediately from socket.connect
-            // for consistency to bluetooth/bluetooth-LE app use same SerialListener and SerialService classes
-            soundPool.play(SOUND_ON, 1.0f, 1.0f, SOUND_PRIORITY_1, 0, 1.0f);
-        } catch (Exception e) {
-            log("connect exception: " + e.getMessage());
-        }
-    }
+}
 
     private void tryToFindDeviceInFuture(final Boolean permissionGranted, int ms) {
         new Timer().schedule(new TimerTask() {
@@ -422,11 +458,10 @@ public class MainActivity extends AppCompatActivity
         Log.d(TAG, s);
         if (settings.isForceLog()) {
             try {
-                    String path = "/irthermometer/";
-                    File docs = new File(getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS), path);
-                    // docs.mkdirs();
-                    FileOutputStream output = new FileOutputStream(docs.getAbsoluteFile()
-                            + Settings.LOG_FILE_NAME, true);
+                String path = "/irthermometer/";
+                File docs = new File(getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS), path);
+                FileOutputStream output = new FileOutputStream(docs.getAbsoluteFile()
+                        + Settings.LOG_FILE_NAME, true);
                 output.write((new Date().toString() + ": " + s + "\r\n").getBytes());
                 output.close();
             } catch (IOException e) {
@@ -472,7 +507,6 @@ public class MainActivity extends AppCompatActivity
     public void onCurrentTemperature(final int currentTemperature) {
         double t = (currentTemperature - 27315) / 100.;
         tvTemperatureCurrent.setText(temperatureFormat.format(t));
-        log("current temperature " + currentTemperature);
     }
 
     @Override
@@ -635,6 +669,28 @@ public class MainActivity extends AppCompatActivity
                                 - (1 - e) * temperatureBackground * temperatureBackground * temperatureBackground * temperatureBackground)
                                 / e
                 )));
+    }
+
+    public void sendLogByMail(){
+        // save logcat in file
+
+        String path = "/irthermometer/" + Settings.LOG_FILE_NAME;
+        File outputFile = new File(getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS), path);
+        // File outputFile = new File(Environment.getExternalStorageDirectory(), Settings.LOG_FILE_NAME);
+        // send file using email
+        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+        // Set type to "email"
+        emailIntent.setType("vnd.android.cursor.dir/email");
+        String to[] = { Settings.EMAIL_SUPPORT };
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, to);
+        // the attachment
+        // emailIntent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(outputFile));
+        Uri upath = Uri.parse( "file://" + outputFile.getAbsolutePath());
+        emailIntent.putExtra(Intent.EXTRA_STREAM, path);
+        // the mail subject
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "IRThermometer log gate#"
+                + Long.toString(settings.getGate()));
+        startActivity(Intent.createChooser(emailIntent , "Отправить отчет по почте.."));
     }
 
 }
