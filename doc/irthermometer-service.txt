@@ -1,5 +1,0 @@
-10-14 16:25:23.087 28815 28815 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}: java.lang.IllegalStateException: Not allowed to start service Intent { cmp=com.commandus.irthermometer/.SerialService }: app is in background uid UidRecord{2bf25fd u0a225 TPSL idle procs:1 seq(0,0,0)}
-10-14 16:25:23.087 28815 28815 E AndroidRuntime: Caused by: java.lang.IllegalStateException: Not allowed to start service Intent { cmp=com.commandus.irthermometer/.SerialService }: app is in background uid UidRecord{2bf25fd u0a225 TPSL idle procs:1 seq(0,0,0)}
-10-16 11:18:06.166  9630  9630 E SerialService: serial service created
-10-16 11:18:06.169  9630  9630 E SerialService: service bind
-10-16 11:18:06.292  9630  9630 E SerialService: attach serial listener
