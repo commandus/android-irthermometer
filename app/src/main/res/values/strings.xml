@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ИК термометр</string>
+    <string name="menu_info">Справка</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_send_log">Отправить отчет</string>
+    <string name="menu_start_measure">Старт</string>
+    <string name="title_activity_settings">Настройки</string>
+
+    <!-- Preference Titles -->
+    <string name="settings_header_service">Веб сервис</string>
+
+    <!-- Messages Preferences -->
+    <string name="settings_service_url">Адрес</string>
+    <string name="settings_service_gate">Идентификатор</string>
+    <string name="settings_service_secret">Секретный код</string>
+    <string name="settings_service_proto">Протокол</string>
+    <string name="settings_force_log">Журналировать</string>
+    <string name="settings_auto_start">Автозапуск</string>
+    <string name="settings_theme">Тема</string>
+</resources>

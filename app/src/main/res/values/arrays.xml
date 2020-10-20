@@ -1,0 +1,23 @@
+<resources>
+    <!-- Service mode Preference -->
+    <string-array name="service_proto_entries">
+        <item>JSON</item>
+        <item>gRPC</item>
+    </string-array>
+
+    <string-array name="service_proto_values">
+        <item>json</item>
+        <item>grpc</item>
+    </string-array>
+
+    <string-array name="theme_entries">
+        <item>Светлая</item>
+        <item>Темная</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>light</item>
+        <item>dark</item>
+    </string-array>
+
+</resources>

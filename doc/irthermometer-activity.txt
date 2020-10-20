@@ -1,0 +1,70 @@
+10-14 12:51:13.299 22470 24023 E AndroidRuntime: 	at com.commandus.irthermometer.MainActivity$3.onFailure(MainActivity.java:434)
+10-14 13:13:48.743 27226 27226 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.app.ActionBar.hide()' on a null object reference
+10-14 13:13:48.743 27226 27226 E AndroidRuntime: 	at com.commandus.irthermometer.MainActivity.onCreate(MainActivity.java:115)
+10-14 13:14:10.347 27526 27526 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.app.ActionBar.hide()' on a null object reference
+10-14 13:14:10.347 27526 27526 E AndroidRuntime: 	at com.commandus.irthermometer.MainActivity.onCreate(MainActivity.java:115)
+10-14 13:14:29.944 27685 27685 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.app.ActionBar.hide()' on a null object reference
+10-14 13:14:29.944 27685 27685 E AndroidRuntime: 	at com.commandus.irthermometer.MainActivity.onCreate(MainActivity.java:115)
+10-14 13:14:41.446 27771 27771 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.app.ActionBar.hide()' on a null object reference
+10-14 13:14:41.446 27771 27771 E AndroidRuntime: 	at com.commandus.irthermometer.MainActivity.onCreate(MainActivity.java:115)
+10-14 16:01:28.134 25814 26085 E AndroidRuntime: 	at com.commandus.irthermometer.MainActivity$3.onResponse(MainActivity.java:419)
+10-14 16:06:37.546 26767 27094 E AndroidRuntime: 	at com.commandus.irthermometer.MainActivity$3.onResponse(MainActivity.java:374)
+10-14 16:06:45.310 27122 27204 E AndroidRuntime: 	at com.commandus.irthermometer.MainActivity$3.onResponse(MainActivity.java:374)
+10-14 16:25:23.087 28815 28815 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}: java.lang.IllegalStateException: Not allowed to start service Intent { cmp=com.commandus.irthermometer/.SerialService }: app is in background uid UidRecord{2bf25fd u0a225 TPSL idle procs:1 seq(0,0,0)}
+10-14 16:25:23.087 28815 28815 E AndroidRuntime: 	at com.commandus.irthermometer.MainActivity.onCreate(MainActivity.java:157)
+10-14 16:31:27.296 30895 31065 E AndroidRuntime: 	at com.commandus.irthermometer.MainActivity$4.onResponse(MainActivity.java:470)
+10-15 17:17:02.116  4665  4665 E AndroidRuntime: 	at com.commandus.irthermometer.MainActivity$4.onMenuItemClick(MainActivity.java:196)
+10-15 17:17:35.421  4907  4907 E AndroidRuntime: 	at com.commandus.irthermometer.MainActivity$4.onMenuItemClick(MainActivity.java:196)
+10-15 17:18:31.100  5372  5372 E AndroidRuntime: 	at com.commandus.irthermometer.MainActivity$4.onMenuItemClick(MainActivity.java:196)
+10-15 17:19:23.331  5564  5564 E AndroidRuntime: 	at com.commandus.irthermometer.MainActivity$4.onMenuItemClick(MainActivity.java:196)
+10-15 17:20:14.742  5746  5746 E AndroidRuntime: 	at com.commandus.irthermometer.MainActivity$4.onMenuItemClick(MainActivity.java:196)
+10-15 17:25:56.436  6937  6937 E AndroidRuntime: 	at com.commandus.irthermometer.MainActivity$4.onMenuItemClick(MainActivity.java:196)
+10-15 17:36:25.753  8737  8737 E AndroidRuntime: 	at com.commandus.irthermometer.MainActivity$4.onMenuItemClick(MainActivity.java:196)
+10-16 11:05:00.266  5663  5663 D ActivityThread: add activity client record, r= ActivityRecord{e34c4de token=android.os.BinderProxy@651b100 {com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}} token= android.os.BinderProxy@651b100
+10-16 11:05:23.499  5663  5663 D ActivityThread: Remove activity client record, r= ActivityRecord{e34c4de token=android.os.BinderProxy@651b100 {com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}} token= android.os.BinderProxy@651b100
+10-16 11:06:32.601  6974  6974 D ActivityThread: add activity client record, r= ActivityRecord{e34c4de token=android.os.BinderProxy@651b100 {com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}} token= android.os.BinderProxy@651b100
+10-16 11:07:16.053  7143  7143 D ActivityThread: add activity client record, r= ActivityRecord{e34c4de token=android.os.BinderProxy@651b100 {com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}} token= android.os.BinderProxy@651b100
+10-16 11:17:26.934  1355  2183 I ActivityManager:   finishDisabledPackageActivitiesLocked Force finishing activity ActivityRecord{3fc7992 u0 com.commandus.irthermometer/.MainActivity t32260}
+10-16 11:17:26.948  1355  1377 V WindowManager: removeAppToken: AppWindowToken{9efc760 token=Token{8766f63 ActivityRecord{3fc7992 u0 com.commandus.irthermometer/.MainActivity t32260}}} delayed=false Callers=com.android.server.wm.DisplayContent.removeAppToken:1086 com.android.server.wm.AppWindowContainerController.removeContainer:315 com.android.server.am.ActivityRecord.removeWindowContainer:1201 com.android.server.am.ActivityStack.removeActivityFromHistoryLocked:4566 
+10-16 11:17:26.948  1355  1377 V WindowManager: removeIfPossible: Window{bdb8f75 u0 com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}
+10-16 11:17:26.949  1355  1377 V WindowManager: postWindowRemoveCleanupLocked: Window{bdb8f75 u0 com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}
+10-16 11:17:26.949  1355  1377 V WindowManager: Removing Window{bdb8f75 u0 com.commandus.irthermometer/com.commandus.irthermometer.MainActivity} from AppWindowToken{9efc760 token=Token{8766f63 ActivityRecord{3fc7992 u0 com.commandus.irthermometer/.MainActivity t32260}}}
+10-16 11:18:02.324  1355  4421 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 hwFlg=0x10 cmp=com.commandus.irthermometer/.MainActivity} from uid 2000
+10-16 11:18:02.326  1355  4421 I ActivityManager: ActivityRecord info: ActivityInfo{a6de717 com.commandus.irthermometer.MainActivity}
+10-16 11:18:02.346  1355  4421 V WindowManager: addAppToken: AppWindowToken{9dfddb3 token=Token{2a86f22 ActivityRecord{281b4ed u0 com.commandus.irthermometer/.MainActivity t32261}}} controller={TaskWindowContainerController taskId=32261} at 2147483647
+10-16 11:18:02.388  1355  1380 I ActivityManager: Start proc 9630:com.commandus.irthermometer/u0a225 for activity com.commandus.irthermometer/.MainActivity
+10-16 11:18:02.458  1355  1464 V WindowManager: Check opening app=AppWindowToken{9dfddb3 token=Token{2a86f22 ActivityRecord{281b4ed u0 com.commandus.irthermometer/.MainActivity t32261}}}: allDrawn=false startingDisplayed=true startingMoved=false isRelaunching()=false startingWindow=Window{4866a46 u0 Splash Screen com.commandus.irthermometer}
+10-16 11:18:05.715  9630  9630 E MainActivity: main activity create
+10-16 11:18:06.121  9630  9630 E MainActivity: main activity created
+10-16 11:18:06.124  9630  9630 D ActivityThread: add activity client record, r= ActivityRecord{e34c4de token=android.os.BinderProxy@651b100 {com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}} token= android.os.BinderProxy@651b100
+10-16 11:18:06.131  9630  9630 E MainActivity: onstart
+10-16 11:18:06.161  1355  4421 V WindowManager: addWindow: Window{cd72542 u0 com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}
+10-16 11:18:06.164  1355  4637 D HiData_HwAPPQoEActivityMonitor: handleActivityChange,  curPackage:com.commandus.irthermometer, curClass:com.commandus.irthermometer.MainActivity
+10-16 11:18:06.164  1355  4637 D HiData_HwAPPQoEResourceMangerImpl: checkIsMonitorAPKScence input :com.commandus.irthermometer,com.commandus.irthermometer.MainActivity
+10-16 11:18:06.164  3201  3221 I AppLifeChangeSensor:  CAWARENESS: activityResumed componentName = ComponentInfo{com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}
+10-16 11:18:06.164  1355  1584 D HiDATA_HiStream: activityResumed:pid=9630, uid=10225, component=ComponentInfo{com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}
+10-16 11:18:06.164  1355  1584 D HiData_HwAPPQoEResourceMangerImpl: checkIsMonitorVideoScence input :com.commandus.irthermometer,com.commandus.irthermometer.MainActivity
+10-16 11:18:06.164  1785 11623 D DollieActivityManagerAdapter: [Resumed] pid:9630 uid:10225 ComponentInfo{com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}
+10-16 11:18:06.169  1785 11623 E DollieAdapterService: notifyActivityState pkg:com.commandus.irthermometer/com.commandus.irthermometer.MainActivity state:2 fg:true mUid:10225
+10-16 11:18:06.244  1355  1633 V HwPhoneWindowManager: updateSystemUiColorLw window=Window{cd72542 u0 com.commandus.irthermometer/com.commandus.irthermometer.MainActivity},EmuiStyle=0,StatusBarColor=0xff3700b3,NavigationBarColor=0xff000000, mForceNotchStatusBar=false
+10-16 11:18:06.246  1355  1378 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{cd72542 u0 com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}
+10-16 11:18:06.258  1355  1378 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{cd72542 u0 com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}
+10-16 11:18:06.292  9630  9630 E MainActivity: service connect..
+10-16 11:18:06.294  9630  9630 E MainActivity: connection failed: device not found
+10-16 11:18:06.278  1355  1378 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{cd72542 u0 com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}
+10-16 11:18:06.368  1355  1378 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{cd72542 u0 com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}
+10-16 11:18:06.368  1355  1464 V WindowManager_visibility: updateAllDrawn Add AppWindowToken{9dfddb3 token=Token{2a86f22 ActivityRecord{281b4ed u0 com.commandus.irthermometer/.MainActivity t32261}}}
+10-16 11:18:06.368  1355  1464 V WindowManager_visibility: updateAllDrawn allDrawn=false interesting=1 drawn=1 relaunchCount=0 for AppWindowToken{9dfddb3 token=Token{2a86f22 ActivityRecord{281b4ed u0 com.commandus.irthermometer/.MainActivity t32261}}}
+10-16 11:18:06.371  1355  1378 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{cd72542 u0 com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}
+10-16 11:18:06.372  1355  1388 I ActivityManager: Displayed com.commandus.irthermometer/.MainActivity: +3s999ms
+10-16 11:18:06.373  1355  1388 D ActivityManager: EVENT_APP_ACTIVITY_DISPLAYED_FINISH reportData: com.commandus.irthermometer/.MainActivity 9630 3999
+10-16 11:18:06.376  1355  1378 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{cd72542 u0 com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}
+10-16 11:18:06.378  1355  1464 I DebugKeepScreenOn: Acquiring screen wakelock due to Window{cd72542 u0 com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}
+10-16 11:18:06.383  1355  1378 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{cd72542 u0 com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}
+10-16 11:18:06.411  1355  1378 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{cd72542 u0 com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}
+10-16 11:18:06.485  1355  1464 V WindowManager: Removing Window{4866a46 u0 Splash Screen com.commandus.irthermometer} from AppWindowToken{9dfddb3 token=Token{2a86f22 ActivityRecord{281b4ed u0 com.commandus.irthermometer/.MainActivity t32261}}}
+10-16 11:18:06.488  1355  1378 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{cd72542 u0 com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}
+10-16 11:18:06.504  1355  1378 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{cd72542 u0 com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}
+10-16 11:18:06.631  1355  1378 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{cd72542 u0 com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}
+10-16 11:18:06.643  1355  1378 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{cd72542 u0 com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}
+10-16 11:18:06.732  1355  1378 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{cd72542 u0 com.commandus.irthermometer/com.commandus.irthermometer.MainActivity}

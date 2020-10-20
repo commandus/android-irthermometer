@@ -1,0 +1,734 @@
+Fri Oct 16 13:02:06 GMT+09:00 2020: main activity created
+Fri Oct 16 13:02:06 GMT+09:00 2020: onstart
+Fri Oct 16 13:02:06 GMT+09:00 2020: service connect..
+Fri Oct 16 13:02:06 GMT+09:00 2020: connection failed: device not found
+Fri Oct 16 13:02:29 GMT+09:00 2020: onstop
+Fri Oct 16 13:02:29 GMT+09:00 2020: onDebug: irthermometer-service: service destroy
+Fri Oct 16 13:02:29 GMT+09:00 2020: onDebug: irthermometer-service: service disconnect socket
+
+
+
+
+Fri Oct 16 13:02:31 GMT+09:00 2020: main activity created
+Fri Oct 16 13:02:31 GMT+09:00 2020: onstart
+Fri Oct 16 13:02:31 GMT+09:00 2020: service connect..
+Fri Oct 16 13:02:31 GMT+09:00 2020: 16d0:87e
+Fri Oct 16 13:02:31 GMT+09:00 2020: no driver found, probe custom driver..
+Fri Oct 16 13:02:31 GMT+09:00 2020: Check USB permission..
+Fri Oct 16 13:02:31 GMT+09:00 2020: request USB permission..
+Fri Oct 16 13:02:36 GMT+09:00 2020: onstop
+Fri Oct 16 13:02:36 GMT+09:00 2020: onDebug: irthermometer-service: service destroy
+Fri Oct 16 13:02:36 GMT+09:00 2020: onDebug: irthermometer-service: service disconnect socket
+Fri Oct 16 13:02:37 GMT+09:00 2020: main activity created
+Fri Oct 16 13:02:37 GMT+09:00 2020: onstart
+Fri Oct 16 13:02:37 GMT+09:00 2020: service connect..
+Fri Oct 16 13:02:37 GMT+09:00 2020: 16d0:87e
+Fri Oct 16 13:02:37 GMT+09:00 2020: no driver found, probe custom driver..
+Fri Oct 16 13:02:37 GMT+09:00 2020: Check USB permission..
+Fri Oct 16 13:02:37 GMT+09:00 2020: USB connection established..
+Fri Oct 16 13:02:37 GMT+09:00 2020: connect socket..
+Fri Oct 16 13:02:37 GMT+09:00 2020: start with ambient temperature
+Fri Oct 16 13:02:37 GMT+09:00 2020: onDebug: irthermometer-service: service connect socket
+Fri Oct 16 13:02:37 GMT+09:00 2020: onDebug: irthermometer-service: meause ambient
+Fri Oct 16 13:02:37 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:37 GMT+09:00 2020: current temperature 29768
+Fri Oct 16 13:02:37 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:37 GMT+09:00 2020: current temperature -1
+Fri Oct 16 13:02:37 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:37 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:37 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:37 GMT+09:00 2020: current temperature 29700
+Fri Oct 16 13:02:37 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:37 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:37 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:37 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:37 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:37 GMT+09:00 2020: current temperature 29686
+Fri Oct 16 13:02:37 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:37 GMT+09:00 2020: current temperature 29686
+Fri Oct 16 13:02:37 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:37 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:37 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:37 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:37 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:37 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:37 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:37 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:37 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:37 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:37 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:37 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:37 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:37 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:37 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:37 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:38 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:38 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:38 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:38 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:38 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:38 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:38 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:38 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:38 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:38 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:38 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:38 GMT+09:00 2020: current temperature 29686
+Fri Oct 16 13:02:38 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:38 GMT+09:00 2020: current temperature 29686
+Fri Oct 16 13:02:38 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:38 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:38 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:38 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:38 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:38 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:38 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:38 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:38 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:38 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:38 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:38 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:38 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:38 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:38 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:38 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:38 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:38 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:38 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:38 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:39 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:39 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:39 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:39 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:39 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:39 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:39 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:39 GMT+09:00 2020: current temperature 29700
+Fri Oct 16 13:02:39 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:39 GMT+09:00 2020: current temperature 29700
+Fri Oct 16 13:02:39 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:39 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:39 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:39 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:39 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:39 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:39 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:39 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:39 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:39 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:39 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:39 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:39 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:39 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:39 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:39 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:39 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:39 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:39 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:39 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:39 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:39 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:39 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:39 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:40 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:40 GMT+09:00 2020: current temperature 29700
+Fri Oct 16 13:02:40 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:40 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:40 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:40 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:40 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:40 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:40 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:40 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:40 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:40 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:40 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:40 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:40 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:40 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:40 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:40 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:40 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:40 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:40 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:40 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:40 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:40 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:40 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:40 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:40 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:40 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:40 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:40 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:40 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:40 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:40 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:40 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:40 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:40 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:41 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:41 GMT+09:00 2020: current temperature 29686
+Fri Oct 16 13:02:41 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:41 GMT+09:00 2020: current temperature 29686
+Fri Oct 16 13:02:41 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:41 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:41 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:41 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:41 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:41 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:41 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:41 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:41 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:41 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:41 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:41 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:41 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:41 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:41 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:41 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:41 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:41 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:41 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:41 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:41 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:41 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:41 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:41 GMT+09:00 2020: current temperature 29700
+Fri Oct 16 13:02:41 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:41 GMT+09:00 2020: current temperature 29700
+Fri Oct 16 13:02:41 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:41 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:41 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:41 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:42 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:42 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:42 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:42 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:42 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:42 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:42 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:42 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:42 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:42 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:42 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:42 GMT+09:00 2020: current temperature 29756
+Fri Oct 16 13:02:42 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:42 GMT+09:00 2020: current temperature 30180
+Fri Oct 16 13:02:42 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:42 GMT+09:00 2020: current temperature 30180
+Fri Oct 16 13:02:42 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:42 GMT+09:00 2020: current temperature 30456
+Fri Oct 16 13:02:42 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:42 GMT+09:00 2020: current temperature 30456
+Fri Oct 16 13:02:42 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:42 GMT+09:00 2020: current temperature 30576
+Fri Oct 16 13:02:42 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:42 GMT+09:00 2020: current temperature 30574
+Fri Oct 16 13:02:42 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:42 GMT+09:00 2020: current temperature 30574
+Fri Oct 16 13:02:42 GMT+09:00 2020: new value shown Measurement {, "t": 30576, "tmin": 29686, "tambient": 29768, "time": 1602820962492}
+Fri Oct 16 13:02:42 GMT+09:00 2020: onDebug: irthermometer-service: meause ambient
+Fri Oct 16 13:02:42 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:42 GMT+09:00 2020: current temperature 29802
+Fri Oct 16 13:02:42 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:42 GMT+09:00 2020: current temperature 29802
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:43 GMT+09:00 2020: current temperature 29770
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:43 GMT+09:00 2020: current temperature 29724
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:43 GMT+09:00 2020: current temperature 29724
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:43 GMT+09:00 2020: current temperature 29732
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:43 GMT+09:00 2020: current temperature 29732
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:43 GMT+09:00 2020: current temperature 29726
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:43 GMT+09:00 2020: current temperature 29714
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:43 GMT+09:00 2020: current temperature 29714
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:43 GMT+09:00 2020: current temperature 29720
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:43 GMT+09:00 2020: current temperature 29720
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:43 GMT+09:00 2020: current temperature 29706
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:43 GMT+09:00 2020: current temperature 29718
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:43 GMT+09:00 2020: current temperature 29718
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:43 GMT+09:00 2020: current temperature 29714
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:43 GMT+09:00 2020: current temperature 29714
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:43 GMT+09:00 2020: current temperature 29708
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:43 GMT+09:00 2020: current temperature 29708
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:43 GMT+09:00 2020: current temperature 29708
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:43 GMT+09:00 2020: current temperature 29702
+Fri Oct 16 13:02:43 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:44 GMT+09:00 2020: current temperature 29702
+Fri Oct 16 13:02:44 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:44 GMT+09:00 2020: current temperature 29702
+Fri Oct 16 13:02:44 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:44 GMT+09:00 2020: current temperature 29700
+Fri Oct 16 13:02:44 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:44 GMT+09:00 2020: current temperature 29700
+Fri Oct 16 13:02:44 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:44 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:44 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:44 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:44 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:44 GMT+09:00 2020: current temperature 29702
+Fri Oct 16 13:02:44 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:44 GMT+09:00 2020: current temperature 29718
+Fri Oct 16 13:02:44 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:44 GMT+09:00 2020: current temperature 29718
+Fri Oct 16 13:02:44 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:44 GMT+09:00 2020: current temperature 29718
+Fri Oct 16 13:02:44 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:44 GMT+09:00 2020: current temperature 29718
+Fri Oct 16 13:02:44 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:44 GMT+09:00 2020: current temperature 29744
+Fri Oct 16 13:02:44 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:44 GMT+09:00 2020: current temperature 30006
+Fri Oct 16 13:02:44 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:44 GMT+09:00 2020: current temperature 30006
+Fri Oct 16 13:02:44 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:44 GMT+09:00 2020: current temperature 30392
+Fri Oct 16 13:02:44 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:44 GMT+09:00 2020: current temperature 30392
+Fri Oct 16 13:02:44 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:44 GMT+09:00 2020: current temperature 30386
+Fri Oct 16 13:02:44 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:44 GMT+09:00 2020: current temperature 30420
+Fri Oct 16 13:02:45 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:45 GMT+09:00 2020: current temperature 30420
+Fri Oct 16 13:02:45 GMT+09:00 2020: new value shown Measurement {, "t": 30420, "tmin": 29686, "tambient": 29768, "time": 1602820964789}
+Fri Oct 16 13:02:45 GMT+09:00 2020: onDebug: irthermometer-service: meause ambient
+Fri Oct 16 13:02:45 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:45 GMT+09:00 2020: current temperature 29786
+Fri Oct 16 13:02:45 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:45 GMT+09:00 2020: current temperature 29786
+Fri Oct 16 13:02:45 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:45 GMT+09:00 2020: current temperature 29736
+Fri Oct 16 13:02:45 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:45 GMT+09:00 2020: current temperature 29770
+Fri Oct 16 13:02:45 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:45 GMT+09:00 2020: current temperature 29742
+Fri Oct 16 13:02:45 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:45 GMT+09:00 2020: current temperature 29712
+Fri Oct 16 13:02:45 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:45 GMT+09:00 2020: current temperature 29712
+Fri Oct 16 13:02:45 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:45 GMT+09:00 2020: current temperature 29720
+Fri Oct 16 13:02:45 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:45 GMT+09:00 2020: current temperature 29720
+Fri Oct 16 13:02:45 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:45 GMT+09:00 2020: current temperature 29732
+Fri Oct 16 13:02:45 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:45 GMT+09:00 2020: current temperature 29720
+Fri Oct 16 13:02:45 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:45 GMT+09:00 2020: current temperature 29720
+Fri Oct 16 13:02:45 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:45 GMT+09:00 2020: current temperature 29714
+Fri Oct 16 13:02:45 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:45 GMT+09:00 2020: current temperature 29714
+Fri Oct 16 13:02:45 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:45 GMT+09:00 2020: current temperature 29718
+Fri Oct 16 13:02:45 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:45 GMT+09:00 2020: current temperature 29718
+Fri Oct 16 13:02:46 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:46 GMT+09:00 2020: current temperature 29718
+Fri Oct 16 13:02:46 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:46 GMT+09:00 2020: current temperature 29712
+Fri Oct 16 13:02:46 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:46 GMT+09:00 2020: current temperature 29712
+Fri Oct 16 13:02:46 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:46 GMT+09:00 2020: current temperature 29712
+Fri Oct 16 13:02:46 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:46 GMT+09:00 2020: current temperature 29708
+Fri Oct 16 13:02:46 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:46 GMT+09:00 2020: current temperature 29708
+Fri Oct 16 13:02:46 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:46 GMT+09:00 2020: current temperature 29714
+Fri Oct 16 13:02:46 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:46 GMT+09:00 2020: current temperature 29714
+Fri Oct 16 13:02:46 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:46 GMT+09:00 2020: current temperature 29780
+Fri Oct 16 13:02:46 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:46 GMT+09:00 2020: current temperature 29832
+Fri Oct 16 13:02:46 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:46 GMT+09:00 2020: current temperature 29832
+Fri Oct 16 13:02:46 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:46 GMT+09:00 2020: current temperature 30240
+Fri Oct 16 13:02:46 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:46 GMT+09:00 2020: current temperature 30240
+Fri Oct 16 13:02:46 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:46 GMT+09:00 2020: current temperature 30426
+Fri Oct 16 13:02:46 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:46 GMT+09:00 2020: current temperature 30464
+Fri Oct 16 13:02:46 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:46 GMT+09:00 2020: current temperature 30464
+Fri Oct 16 13:02:46 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:46 GMT+09:00 2020: current temperature 30352
+Fri Oct 16 13:02:46 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:46 GMT+09:00 2020: current temperature 30352
+Fri Oct 16 13:02:47 GMT+09:00 2020: new value shown Measurement {, "t": 30464, "tmin": 29686, "tambient": 29768, "time": 1602820966743}
+Fri Oct 16 13:02:47 GMT+09:00 2020: onDebug: irthermometer-service: meause ambient
+Fri Oct 16 13:02:47 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:47 GMT+09:00 2020: current temperature 29738
+Fri Oct 16 13:02:47 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:47 GMT+09:00 2020: current temperature 29726
+Fri Oct 16 13:02:47 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:47 GMT+09:00 2020: current temperature 29726
+Fri Oct 16 13:02:47 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:47 GMT+09:00 2020: current temperature 29706
+Fri Oct 16 13:02:47 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:47 GMT+09:00 2020: current temperature 29774
+Fri Oct 16 13:02:47 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:47 GMT+09:00 2020: current temperature 29708
+Fri Oct 16 13:02:47 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:47 GMT+09:00 2020: current temperature 29708
+Fri Oct 16 13:02:47 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:47 GMT+09:00 2020: current temperature 29708
+Fri Oct 16 13:02:47 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:47 GMT+09:00 2020: current temperature 29708
+Fri Oct 16 13:02:47 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:47 GMT+09:00 2020: current temperature 29708
+Fri Oct 16 13:02:47 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:47 GMT+09:00 2020: current temperature 29700
+Fri Oct 16 13:02:47 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:47 GMT+09:00 2020: current temperature 29702
+Fri Oct 16 13:02:47 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:47 GMT+09:00 2020: current temperature 29702
+Fri Oct 16 13:02:47 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:47 GMT+09:00 2020: current temperature 29706
+Fri Oct 16 13:02:47 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:47 GMT+09:00 2020: current temperature 29706
+Fri Oct 16 13:02:47 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:47 GMT+09:00 2020: current temperature 29700
+Fri Oct 16 13:02:47 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:47 GMT+09:00 2020: current temperature 29684
+Fri Oct 16 13:02:48 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:48 GMT+09:00 2020: current temperature 29684
+Fri Oct 16 13:02:48 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:48 GMT+09:00 2020: current temperature 29686
+Fri Oct 16 13:02:48 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:48 GMT+09:00 2020: current temperature 29686
+Fri Oct 16 13:02:48 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:48 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:48 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:48 GMT+09:00 2020: current temperature 29730
+Fri Oct 16 13:02:48 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:48 GMT+09:00 2020: current temperature 29730
+Fri Oct 16 13:02:48 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:48 GMT+09:00 2020: current temperature 29844
+Fri Oct 16 13:02:48 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:48 GMT+09:00 2020: current temperature 29844
+Fri Oct 16 13:02:48 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:48 GMT+09:00 2020: current temperature 30198
+Fri Oct 16 13:02:48 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:48 GMT+09:00 2020: current temperature 30456
+Fri Oct 16 13:02:48 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:48 GMT+09:00 2020: current temperature 30456
+Fri Oct 16 13:02:48 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:48 GMT+09:00 2020: current temperature 30496
+Fri Oct 16 13:02:48 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:48 GMT+09:00 2020: current temperature 30496
+Fri Oct 16 13:02:48 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:48 GMT+09:00 2020: current temperature 30472
+Fri Oct 16 13:02:48 GMT+09:00 2020: new value shown Measurement {, "t": 30496, "tmin": 29684, "tambient": 29768, "time": 1602820968530}
+Fri Oct 16 13:02:48 GMT+09:00 2020: onDebug: irthermometer-service: meause ambient
+Fri Oct 16 13:02:48 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:48 GMT+09:00 2020: current temperature 29744
+Fri Oct 16 13:02:48 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:48 GMT+09:00 2020: current temperature 29744
+Fri Oct 16 13:02:48 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:48 GMT+09:00 2020: current temperature 29706
+Fri Oct 16 13:02:48 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:48 GMT+09:00 2020: current temperature 29706
+Fri Oct 16 13:02:49 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:49 GMT+09:00 2020: current temperature 29702
+Fri Oct 16 13:02:49 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:49 GMT+09:00 2020: current temperature 29778
+Fri Oct 16 13:02:49 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:49 GMT+09:00 2020: current temperature 29702
+Fri Oct 16 13:02:49 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:49 GMT+09:00 2020: current temperature 29700
+Fri Oct 16 13:02:49 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:49 GMT+09:00 2020: current temperature 29700
+Fri Oct 16 13:02:49 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:49 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:49 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:49 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:49 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:49 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:49 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:49 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:49 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:49 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:49 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:49 GMT+09:00 2020: current temperature 29680
+Fri Oct 16 13:02:49 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:49 GMT+09:00 2020: current temperature 29680
+Fri Oct 16 13:02:49 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:49 GMT+09:00 2020: current temperature 29686
+Fri Oct 16 13:02:49 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:49 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:49 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:49 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:49 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:49 GMT+09:00 2020: current temperature 29680
+Fri Oct 16 13:02:49 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:49 GMT+09:00 2020: current temperature 29680
+Fri Oct 16 13:02:50 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:50 GMT+09:00 2020: current temperature 29684
+Fri Oct 16 13:02:50 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:50 GMT+09:00 2020: current temperature 29686
+Fri Oct 16 13:02:50 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:50 GMT+09:00 2020: current temperature 29686
+Fri Oct 16 13:02:50 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:50 GMT+09:00 2020: current temperature 29678
+Fri Oct 16 13:02:50 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:50 GMT+09:00 2020: current temperature 29678
+Fri Oct 16 13:02:50 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:50 GMT+09:00 2020: current temperature 29684
+Fri Oct 16 13:02:50 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:50 GMT+09:00 2020: current temperature 29680
+Fri Oct 16 13:02:50 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:50 GMT+09:00 2020: current temperature 29680
+Fri Oct 16 13:02:50 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:50 GMT+09:00 2020: current temperature 29674
+Fri Oct 16 13:02:50 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:50 GMT+09:00 2020: current temperature 29674
+Fri Oct 16 13:02:50 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:50 GMT+09:00 2020: current temperature 29678
+Fri Oct 16 13:02:50 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:50 GMT+09:00 2020: current temperature 29680
+Fri Oct 16 13:02:50 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:50 GMT+09:00 2020: current temperature 29680
+Fri Oct 16 13:02:50 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:50 GMT+09:00 2020: current temperature 29678
+Fri Oct 16 13:02:50 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:50 GMT+09:00 2020: current temperature 29678
+Fri Oct 16 13:02:50 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:50 GMT+09:00 2020: current temperature 29674
+Fri Oct 16 13:02:50 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:50 GMT+09:00 2020: current temperature 29680
+Fri Oct 16 13:02:51 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:51 GMT+09:00 2020: current temperature 29680
+Fri Oct 16 13:02:51 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:51 GMT+09:00 2020: current temperature 29706
+Fri Oct 16 13:02:51 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:51 GMT+09:00 2020: current temperature 29706
+Fri Oct 16 13:02:51 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:51 GMT+09:00 2020: current temperature 30002
+Fri Oct 16 13:02:51 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:51 GMT+09:00 2020: current temperature 30308
+Fri Oct 16 13:02:51 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:51 GMT+09:00 2020: current temperature 30308
+Fri Oct 16 13:02:51 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:51 GMT+09:00 2020: current temperature 30366
+Fri Oct 16 13:02:51 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:51 GMT+09:00 2020: current temperature 30366
+Fri Oct 16 13:02:51 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:51 GMT+09:00 2020: current temperature 30372
+Fri Oct 16 13:02:51 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:51 GMT+09:00 2020: current temperature 30360
+Fri Oct 16 13:02:51 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:51 GMT+09:00 2020: current temperature 30360
+Fri Oct 16 13:02:51 GMT+09:00 2020: new value shown Measurement {, "t": 30372, "tmin": 29674, "tambient": 29768, "time": 1602820971350}
+Fri Oct 16 13:02:51 GMT+09:00 2020: onDebug: irthermometer-service: meause ambient
+Fri Oct 16 13:02:51 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:51 GMT+09:00 2020: current temperature 29712
+Fri Oct 16 13:02:51 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:51 GMT+09:00 2020: current temperature 29712
+Fri Oct 16 13:02:51 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:51 GMT+09:00 2020: current temperature 29720
+Fri Oct 16 13:02:51 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:51 GMT+09:00 2020: current temperature 29706
+Fri Oct 16 13:02:51 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:51 GMT+09:00 2020: current temperature 29706
+Fri Oct 16 13:02:51 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:51 GMT+09:00 2020: current temperature 29712
+Fri Oct 16 13:02:51 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:51 GMT+09:00 2020: current temperature 29784
+Fri Oct 16 13:02:52 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:52 GMT+09:00 2020: current temperature 29712
+Fri Oct 16 13:02:52 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:52 GMT+09:00 2020: current temperature 29708
+Fri Oct 16 13:02:52 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:52 GMT+09:00 2020: current temperature 29708
+Fri Oct 16 13:02:52 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:52 GMT+09:00 2020: current temperature 29702
+Fri Oct 16 13:02:52 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:52 GMT+09:00 2020: current temperature 29702
+Fri Oct 16 13:02:52 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:52 GMT+09:00 2020: current temperature 29706
+Fri Oct 16 13:02:52 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:52 GMT+09:00 2020: current temperature 29700
+Fri Oct 16 13:02:52 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:52 GMT+09:00 2020: current temperature 29700
+Fri Oct 16 13:02:52 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:52 GMT+09:00 2020: current temperature 29686
+Fri Oct 16 13:02:52 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:52 GMT+09:00 2020: current temperature 29686
+Fri Oct 16 13:02:52 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:52 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:52 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:52 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:52 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:52 GMT+09:00 2020: current temperature 29694
+Fri Oct 16 13:02:52 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:52 GMT+09:00 2020: current temperature 29678
+Fri Oct 16 13:02:52 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:52 GMT+09:00 2020: current temperature 29678
+Fri Oct 16 13:02:52 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:52 GMT+09:00 2020: current temperature 29686
+Fri Oct 16 13:02:52 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:52 GMT+09:00 2020: current temperature 29686
+Fri Oct 16 13:02:53 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:53 GMT+09:00 2020: current temperature 29684
+Fri Oct 16 13:02:53 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:53 GMT+09:00 2020: current temperature 29678
+Fri Oct 16 13:02:53 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:53 GMT+09:00 2020: current temperature 29678
+Fri Oct 16 13:02:53 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:53 GMT+09:00 2020: current temperature 29680
+Fri Oct 16 13:02:53 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:53 GMT+09:00 2020: current temperature 29680
+Fri Oct 16 13:02:53 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:53 GMT+09:00 2020: current temperature 29684
+Fri Oct 16 13:02:53 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:53 GMT+09:00 2020: current temperature 29678
+Fri Oct 16 13:02:53 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:53 GMT+09:00 2020: current temperature 29678
+Fri Oct 16 13:02:53 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:53 GMT+09:00 2020: current temperature 29678
+Fri Oct 16 13:02:53 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:53 GMT+09:00 2020: current temperature 29678
+Fri Oct 16 13:02:53 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:53 GMT+09:00 2020: current temperature 29678
+Fri Oct 16 13:02:53 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:53 GMT+09:00 2020: current temperature 29684
+Fri Oct 16 13:02:53 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:53 GMT+09:00 2020: current temperature 29684
+Fri Oct 16 13:02:53 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:53 GMT+09:00 2020: current temperature 29678
+Fri Oct 16 13:02:53 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:53 GMT+09:00 2020: current temperature 29678
+Fri Oct 16 13:02:53 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:53 GMT+09:00 2020: current temperature 29686
+Fri Oct 16 13:02:53 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:53 GMT+09:00 2020: current temperature 29946
+Fri Oct 16 13:02:53 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:53 GMT+09:00 2020: current temperature 29946
+Fri Oct 16 13:02:54 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:54 GMT+09:00 2020: current temperature 30380
+Fri Oct 16 13:02:54 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:54 GMT+09:00 2020: current temperature 30380
+Fri Oct 16 13:02:54 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:54 GMT+09:00 2020: current temperature 30426
+Fri Oct 16 13:02:54 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:54 GMT+09:00 2020: current temperature 30442
+Fri Oct 16 13:02:54 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:54 GMT+09:00 2020: current temperature 30442
+Fri Oct 16 13:02:54 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:54 GMT+09:00 2020: current temperature 30450
+Fri Oct 16 13:02:54 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:54 GMT+09:00 2020: current temperature 30450
+Fri Oct 16 13:02:54 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:54 GMT+09:00 2020: current temperature 30462
+Fri Oct 16 13:02:54 GMT+09:00 2020: new value shown Measurement {, "t": 30462, "tmin": 29674, "tambient": 29768, "time": 1602820974046}
+Fri Oct 16 13:02:54 GMT+09:00 2020: onDebug: irthermometer-service: meause ambient
+Fri Oct 16 13:02:54 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:54 GMT+09:00 2020: current temperature 29802
+Fri Oct 16 13:02:54 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:54 GMT+09:00 2020: current temperature 29802
+Fri Oct 16 13:02:54 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:54 GMT+09:00 2020: current temperature 29718
+Fri Oct 16 13:02:54 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:54 GMT+09:00 2020: current temperature 29718
+Fri Oct 16 13:02:54 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:54 GMT+09:00 2020: current temperature 29714
+Fri Oct 16 13:02:54 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:54 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:54 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:54 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:54 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:54 GMT+09:00 2020: current temperature 29790
+Fri Oct 16 13:02:54 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:54 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:55 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:55 GMT+09:00 2020: current temperature 29702
+Fri Oct 16 13:02:55 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:55 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:55 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:55 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:55 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:55 GMT+09:00 2020: current temperature 29680
+Fri Oct 16 13:02:55 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:55 GMT+09:00 2020: current temperature 29680
+Fri Oct 16 13:02:55 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:55 GMT+09:00 2020: current temperature 29686
+Fri Oct 16 13:02:55 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:55 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:55 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:55 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:55 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:55 GMT+09:00 2020: current temperature 29684
+Fri Oct 16 13:02:55 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:55 GMT+09:00 2020: current temperature 29684
+Fri Oct 16 13:02:55 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:55 GMT+09:00 2020: current temperature 29678
+Fri Oct 16 13:02:55 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:55 GMT+09:00 2020: current temperature 29680
+Fri Oct 16 13:02:55 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:55 GMT+09:00 2020: current temperature 29680
+Fri Oct 16 13:02:55 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:55 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:55 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:55 GMT+09:00 2020: current temperature 29690
+Fri Oct 16 13:02:55 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:55 GMT+09:00 2020: current temperature 29696
+Fri Oct 16 13:02:55 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:55 GMT+09:00 2020: current temperature 29852
+Fri Oct 16 13:02:56 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:56 GMT+09:00 2020: current temperature 29852
+Fri Oct 16 13:02:56 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:56 GMT+09:00 2020: current temperature 29900
+Fri Oct 16 13:02:56 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:56 GMT+09:00 2020: current temperature 29900
+Fri Oct 16 13:02:56 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:56 GMT+09:00 2020: current temperature 30272
+Fri Oct 16 13:02:56 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:56 GMT+09:00 2020: current temperature 30332
+Fri Oct 16 13:02:56 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:56 GMT+09:00 2020: current temperature 30332
+Fri Oct 16 13:02:56 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:56 GMT+09:00 2020: current temperature 30382
+Fri Oct 16 13:02:56 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:56 GMT+09:00 2020: current temperature 30382
+Fri Oct 16 13:02:56 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:56 GMT+09:00 2020: current temperature 30412
+Fri Oct 16 13:02:56 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:56 GMT+09:00 2020: current temperature 30436
+Fri Oct 16 13:02:56 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:56 GMT+09:00 2020: current temperature 30436
+Fri Oct 16 13:02:56 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:56 GMT+09:00 2020: current temperature 30450
+Fri Oct 16 13:02:56 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:56 GMT+09:00 2020: current temperature 30450
+Fri Oct 16 13:02:56 GMT+09:00 2020: new value shown Measurement {, "t": 30450, "tmin": 29674, "tambient": 29768, "time": 1602820976252}
+Fri Oct 16 13:02:56 GMT+09:00 2020: onDebug: irthermometer-service: meause ambient
+Fri Oct 16 13:02:56 GMT+09:00 2020: onDebug: irthermometer-service: meause IR
+Fri Oct 16 13:02:58 GMT+09:00 2020: onDebug: irthermometer-service: meause IR error
+Fri Oct 16 13:02:58 GMT+09:00 2020: current temperature 29998
+Fri Oct 16 13:03:07 GMT+09:00 2020: onstop
+Fri Oct 16 13:03:07 GMT+09:00 2020: onDebug: irthermometer-service: service destroy
+Fri Oct 16 13:03:07 GMT+09:00 2020: onDebug: irthermometer-service: service disconnect socket

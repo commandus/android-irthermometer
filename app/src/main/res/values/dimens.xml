@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 3:4:6:8:12-->
+    <dimen name="temperature_text_size">130sp</dimen>
+    <dimen name="g0_text_size">15sp</dimen>
+    <dimen name="g1_text_size">20sp</dimen>
+    <dimen name="time_text_size">80sp</dimen>\
+    <dimen name="ambient_temperature_text_size">32sp</dimen>
+    <dimen name="current_temperature_text_size">20sp</dimen>
+    <dimen name="person_text_size">20sp</dimen>
+    <dimen name="text_size">20sp</dimen>
+</resources>
