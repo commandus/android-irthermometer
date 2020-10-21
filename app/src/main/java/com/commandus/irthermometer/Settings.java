@@ -1,13 +1,9 @@
 package com.commandus.irthermometer;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.Environment;
-
 import androidx.preference.PreferenceManager;
 
-import java.io.File;
 
 public class Settings {
     public static final int USB_VENDOR_ID = 0x16d0;
@@ -20,8 +16,10 @@ public class Settings {
     public  static final String EMAIL_SUPPORT = "andrey.ivanov@ikfia.ysn.ru";
 
     private static final String PREF_GATE = "gate";
-    private static final String PREF_SERVICE_URL = "url";
-    private static final String DEF_SERVICE_URL = "https://aikutsk.ru/irtm";
+    private static final String PREF_SERVICE_HOST = "host";
+    private static final String PREF_SERVICE_PORT = "port";
+    private static final String DEF_SERVICE_ADDRESS = "aikutsk.ru/irtm";
+    private static final int DEF_SERVICE_PORT = 443;
 
     private static final String PREF_SERVICE_PROTO = "proto";
     private static final String PREF_SECRET = "secret";
@@ -34,13 +32,15 @@ public class Settings {
 
     public static final String LOG_FILE_NAME = "ir-thermometer.txt";
 
+
     private static Settings mSettings = null;
     private final Context mContext;
 
     private boolean mForceLog;
     private long mGate;
     private long mSecret;
-    private String mServiceUrl;
+    private String mHost;
+    private int mPort;
     private String mProto; // grpc|json
     private String mTheme; // light|dark
     private double mEmissivityCoefficient;
@@ -63,8 +63,12 @@ public class Settings {
         return mSecret;
     }
 
-    public String getServiceUrl() {
-        return mServiceUrl;
+    public String getHost() {
+        return mHost;
+    }
+
+    public int getPort() {
+        return mPort;
     }
 
     public String getProto() {
@@ -92,7 +96,8 @@ public class Settings {
 
         mGate = prefs.getLong(PREF_GATE, 0);
         mSecret = prefs.getLong(PREF_SECRET, 0);
-        mServiceUrl = prefs.getString(PREF_SERVICE_URL, DEF_SERVICE_URL);
+        mHost = prefs.getString(PREF_SERVICE_HOST, DEF_SERVICE_ADDRESS);
+        mPort = prefs.getInt(PREF_SERVICE_PORT, DEF_SERVICE_PORT);
         mProto = prefs.getString(PREF_SERVICE_PROTO, "grpc");
         mTheme = prefs.getString(PREF_THEME, "light");
     }

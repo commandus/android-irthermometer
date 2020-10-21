@@ -6,7 +6,13 @@
             app:title="@string/settings_service_url"
             app:useSimpleSummaryProvider="true"
             android:inputType="text"
-            android:defaultValue="https://aikutsk.ru/irtm"
+            android:defaultValue="aikutsk.ru/irtm"
+            />
+        <EditTextPreference
+            app:key="port"
+            app:title="@string/settings_service_port"
+            app:useSimpleSummaryProvider="true"
+            android:inputType="numberDecimal"
             />
         <EditTextPreference
             app:key="gate"
@@ -22,7 +28,7 @@
             />
         <ListPreference
             app:key="proto"
-            app:defaultValue="grpc"
+            app:defaultValue="json"
             app:entries="@array/service_proto_entries"
             app:entryValues="@array/service_proto_values"
             app:title="@string/settings_service_proto"

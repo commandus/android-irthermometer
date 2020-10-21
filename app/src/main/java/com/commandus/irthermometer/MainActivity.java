@@ -1,9 +1,11 @@
 package com.commandus.irthermometer;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
+import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -11,20 +13,24 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
+import android.content.res.Configuration;
 import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbDeviceConnection;
 import android.hardware.usb.UsbManager;
 import android.media.AudioAttributes;
 import android.media.SoundPool;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.IBinder;
 import android.speech.tts.TextToSpeech;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
+
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -42,12 +48,18 @@ import org.json.JSONObject;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.lang.ref.WeakReference;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.TimeUnit;
 
+import io.grpc.ManagedChannel;
+import io.grpc.ManagedChannelBuilder;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.MediaType;
@@ -215,6 +227,16 @@ public class MainActivity extends AppCompatActivity
 
         checkTheme();
         log("main activity created");
+    }
+
+    /**
+     * Prevent re-start activity on USB keyboard plugged in
+     * @param config new configuration
+     */
+    @Override
+    public void onConfigurationChanged(@NonNull Configuration config) {
+        super.onConfigurationChanged(config);
+        log("new configuration: " + config.toString());
     }
 
     private void checkTheme() {
@@ -539,26 +561,92 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void sendMeasurement(long id, final Measurement value) {
+        GateMeasurement gateMeasurement = new GateMeasurement(
+                value, settings.getGate(), settings.getSecret(), id,
+                settings.getHost(), settings.getPort(), settings.getEmissivityCoefficient());
+        if (settings.getProto() == "json") {
+            sendMeasurementJSON(gateMeasurement);
+        } else {
+            sendMeasurementJSON(gateMeasurement);
+            // sendMeasurementGRPC(gateMeasurement);
+        }
+    }
+
+    private void sendMeasurementGRPC(final GateMeasurement value) {
+        new GrpcTask(this).execute(value);
+    }
+
+    private static class GrpcTask extends AsyncTask<GateMeasurement, Void, String> {
+        private final WeakReference<Activity> activityReference;
+        private ManagedChannel channel;
+
+        private GrpcTask(Activity activity) {
+            this.activityReference = new WeakReference<Activity>(activity);
+        }
+
+        @Override
+        protected String doInBackground(GateMeasurement ... values) {
+            GateMeasurement value = values[0];
+            String host = value.url;
+            int port = value.port;
+            try {
+                int t = calcT(value);
+                channel = ManagedChannelBuilder.forAddress(host, port).usePlaintext().build();
+                IRThermometerGrpc.IRThermometerBlockingStub stub = IRThermometerGrpc.newBlockingStub(channel);
+                MeasurementRequest request = MeasurementRequest.newBuilder()
+                        .setT(t)
+                        .setGate(Gate.newBuilder()
+                                .setGateid(value.gateId)
+                                .setSecret(value.secret))
+                        .setTime(value.measurement.startTime)
+                        .setTir(value.measurement.maxT - 27315)
+                        .setTmin(value.measurement.minT - 27315)
+                        .setTambient(value.measurement.ambientT - 27315)
+                        .build();
+                MeasurementResponse reply = stub.measurement(request);
+                return reply.getMsg();
+            } catch (Exception e) {
+                StringWriter sw = new StringWriter();
+                PrintWriter pw = new PrintWriter(sw);
+                e.printStackTrace(pw);
+                pw.flush();
+                return String.format("Failed... : %n%s", sw);
+            }
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            try {
+                channel.shutdown().awaitTermination(1, TimeUnit.SECONDS);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+            Activity activity = activityReference.get();
+            if (activity == null) {
+                return;
+            }
+            // TextView resultText = (TextView) activity.findViewById(R.id.grpc_response_text);
+            // resultText.setText(result);
+        }
+    }
+
+    private void sendMeasurementJSON(final GateMeasurement value) {
         if (value == null)
             return;
 
-        long gate = settings.getGate();
-        long secret = settings.getSecret();
-
-        // double k = Settings.getEmissivityCoefficient();
         int t = calcT(value);
 
         JSONObject js = new JSONObject();
         try {
-            js.put("secret", secret);
+            js.put("gate", value.gateId);
         } catch (JSONException e) {
         }
         try {
-            js.put("gate", gate);
+            js.put("secret", value.secret);
         } catch (JSONException e) {
         }
         try {
-            js.put("time", value.startTime);
+            js.put("time", value.measurement.startTime);
         } catch (JSONException e) {
         }
         try {
@@ -566,25 +654,26 @@ public class MainActivity extends AppCompatActivity
         } catch (JSONException e) {
         }
         try {
-            js.put("tir", value.maxT - 27315);
+            js.put("tir", value.measurement.maxT - 27315);
         } catch (JSONException e) {
         }
         try {
-            js.put("tmin", value.minT - 27315);
+            js.put("tmin", value.measurement.minT - 27315);
         } catch (JSONException e) {
         }
         try {
-            js.put("tambient", value.ambientT - 27315);
+            js.put("tambient", value.measurement.ambientT - 27315);
         } catch (JSONException e) {
         }
         try {
-            js.put("id", id);
+            js.put("id", value.id);
         } catch (JSONException e) {
         }
         String sJson = js.toString();
         RequestBody json = RequestBody.create(sJson, JSON);
+        log("send to the server https://" + settings.getHost());
         Request request = new Request.Builder()
-                .url(settings.getServiceUrl())
+                .url("https://" + settings.getHost())
                 .post(json)
                 .build();
 
@@ -649,13 +738,21 @@ public class MainActivity extends AppCompatActivity
         tvTime.setVisibility(visible ? View.VISIBLE : View.INVISIBLE);
     }
 
+    public int calcT(Measurement value) {
+        return calcT(value, settings.getEmissivityCoefficient());
+    }
+
+    private static int calcT(GateMeasurement value) {
+        return calcT(value.measurement, value.e);
+    }
+
     /**
      * @param value
      * @return
      * @see "https://www.apogeeinstruments.com/emissivity-correction-for-infrared-radiometer-sensors/"
      */
-    public int calcT(Measurement value) {
-        double e = settings.getEmissivityCoefficient();
+    private static int calcT(Measurement value, double emissivityK) {
+        double e = emissivityK;
         double temperatureSensor = value.maxT / 100.0;
         double temperatureBackground;
         if (value.minT <= 0)

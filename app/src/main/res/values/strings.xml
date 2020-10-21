@@ -17,4 +17,5 @@
     <string name="settings_force_log">Журналировать</string>
     <string name="settings_auto_start">Автозапуск</string>
     <string name="settings_theme">Тема</string>
+    <string name="settings_service_port">Порт</string>
 </resources>

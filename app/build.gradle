@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.protobuf'
 
 android {
     signingConfigs {
@@ -32,6 +33,25 @@ android {
 
 }
 
+protobuf {
+    protoc { artifact = 'com.google.protobuf:protoc:3.12.0' }
+    plugins {
+        grpc { artifact = 'io.grpc:protoc-gen-grpc-java:1.32.2'
+        }
+    }
+    generateProtoTasks {
+        all().each { task ->
+            task.builtins {
+                java { option 'lite' }
+            }
+            task.plugins {
+                grpc { // Options added to --grpc_out
+                    option 'lite' }
+            }
+        }
+    }
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
@@ -42,7 +62,16 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.9.0")
     implementation 'androidx.preference:preference:1.1.0'
 
+    // grpc-java
+    implementation 'io.grpc:grpc-okhttp:1.32.2'
+    implementation 'io.grpc:grpc-protobuf-lite:1.32.2'
+    implementation 'io.grpc:grpc-stub:1.32.2'
+    implementation 'org.apache.tomcat:annotations-api:6.0.53'
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+
 }

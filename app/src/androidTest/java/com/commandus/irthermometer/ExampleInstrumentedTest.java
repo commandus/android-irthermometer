@@ -95,7 +95,7 @@ public class ExampleInstrumentedTest {
         Log.d(TAG, sJson);
         RequestBody json = RequestBody.create(sJson, MediaType.get("application/json; charset=utf-8"));
         Request request = new Request.Builder()
-                .url(Settings.getServiceUrl())
+                .url(Settings.getHost())
                 .post(json)
                 .build();
 

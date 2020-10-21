@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.commandus.irthermometer";
+option java_outer_classname = "irthermometer";
+// option objc_class_prefix = "irthermometer";
+
+package irthermometer;
+
+// The IR thermometer service definition.
+service IRThermometer {
+  rpc signup(Gate) returns (Gate) {}
+  rpc measurement(MeasurementRequest) returns (MeasurementResponse) {}
+}
+
+message Gate {
+  uint64 gateid = 1;
+  uint64 secret = 2;
+}
+
+message MeasurementRequest {
+  Gate  gate = 1;
+  uint64 time = 2;
+  uint64 id = 3;
+  int32 t = 4;
+  // all others optional
+  uint32 tir = 5;
+  uint32 tmin = 6;
+  uint32 tambient = 7;
+}
+
+message MeasurementResponse {
+  string msg = 1;
+}
